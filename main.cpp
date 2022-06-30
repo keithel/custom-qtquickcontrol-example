@@ -1,9 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include <QDirIterator>
-#include <QDebug>
-
 
 int main(int argc, char *argv[])
 {
@@ -17,12 +14,7 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
+
     engine.load(url);
-
-    QDirIterator dirIter(":/", QDirIterator::Subdirectories);
-    while (dirIter.hasNext()) {
-        qDebug() << dirIter.next();
-    }
-
     return app.exec();
 }

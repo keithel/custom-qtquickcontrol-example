@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
-from PySide6.QtCore import QDirIterator, qDebug, QUrl
+from PySide6.QtCore import QUrl
 import resources
 
 
@@ -21,9 +21,4 @@ if __name__ == "__main__":
     engine.objectCreated.connect(object_created_slot)
 
     engine.load(url)
-
-    dir_iter = QDirIterator(":/", QDirIterator.Subdirectories)
-    while dir_iter.hasNext():
-        qDebug(dir_iter.next())
-
     sys.exit(app.exec())
