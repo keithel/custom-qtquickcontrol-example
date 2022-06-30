@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>qtquickcontrols2.conf</file>
+    <file>styles/MyStyle/qmldir</file>
+    <file>styles/MyStyle/TabBar.qml</file>
+    <file>styles/MyStyle/TabButton.qml</file>
+    <file>styles/MyStyle/RoundButton.qml</file>
+    <file>styles/MyStyle/ComboBox.qml</file>
+    <file>styles/MyStyle/Label.qml</file>
+    <file>styles/MyStyle/Button.qml</file>
+</qresource>
+</RCC>
